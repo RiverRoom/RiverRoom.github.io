@@ -7,25 +7,25 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Forza i contenitori e le immagini a mostrare la foto intera */
+			/* Regola la dimensione e il contenitore di tutte le immagini */
 			.spotlight .image,
 			.banner .image {
 				background-image: none !important;
-				height: auto !important;
-				min-height: 0 !important;
-				max-height: none !important;
+				height: 400px !important; /* Definisce un'altezza identica per tutti i riquadri */
+				min-height: 400px !important;
+				max-height: 400px !important;
 				display: flex !important;
 				align-items: center !important;
 				justify-content: center !important;
+				overflow: hidden !important;
 			}
 
 			.spotlight .image img,
 			.banner .image img {
 				position: static !important;
 				width: 100% !important;
-				height: auto !important;
-				max-width: 100% !important;
-				object-fit: contain !important;
+				height: 100% !important;
+				object-fit: contain !important; /* Mantiene la foto intera dentro il riquadro */
 			}
 		</style>
 	</head>
@@ -68,38 +68,4 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/lampade.jpg" alt="La lampada del mare" />
-						</div>
-					</section>
-
-				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Le origini</h2>
-							<p>Storia del viaggio di una vita nel nome dell'Arte.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/book.jpg" alt="Le origini" />
-						</div>
-					</section>
-
-				<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<p>&copy; River Room. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-						</div>
-					</footer>
-
-			</div>
-
-		<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+							<img src="images/lampade.jpg" alt="La lamp
