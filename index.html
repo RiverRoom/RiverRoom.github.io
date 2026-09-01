@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>River Room</title>
@@ -12,52 +7,33 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Regole valide per tutti i dispositivi, inclusi smartphone */
+			/* Forza i contenitori e le immagini a mostrare la foto intera */
 			.spotlight .image,
-			.banner .image,
-			body.is-mobile .spotlight .image,
-			body.is-mobile .banner .image {
+			.banner .image {
 				background-image: none !important;
-				height: 300px !important; /* Dimensioni ottimali anche per schermi piccoli */
-				min-height: 300px !important;
-				max-height: 300px !important;
+				height: auto !important;
+				min-height: 0 !important;
+				max-height: none !important;
 				display: flex !important;
 				align-items: center !important;
 				justify-content: center !important;
-				overflow: hidden !important;
-				width: 100% !important;
 			}
 
 			.spotlight .image img,
-			.banner .image img,
-			body.is-mobile .spotlight .image img,
-			body.is-mobile .banner .image img {
+			.banner .image img {
 				position: static !important;
 				width: 100% !important;
-				height: 100% !important;
+				height: auto !important;
 				max-width: 100% !important;
-				max-height: 100% !important;
-				object-fit: contain !important; /* Mantiene la foto intera */
-			}
-
-			/* Su schermi desktop (più grandi di 736px) aumenta l'altezza a 400px */
-			@media screen and (min-width: 736px) {
-				.spotlight .image,
-				.banner .image {
-					height: 400px !important;
-					min-height: 400px !important;
-					max-height: 400px !important;
-				}
+				object-fit: contain !important;
 			}
 		</style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+		<div id="wrapper" class="divided">
 
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+				<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1><span style="color: #ff0000;">R</span>iver <span style="color: #ff0000;">R</span>oom</h1>
 							<p class="major">Il luogo dove la luce illumina la bellezza, dove l’arte prende forma, dove le emozioni vivono. </p>
@@ -70,8 +46,7 @@
 						</div>
 					</section>
 
-				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-top onscroll-image-fade-in" id="first">
+				<section class="spotlight style1 orient-right content-align-left image-position-top onscroll-image-fade-in" id="first">
 						<div class="content">
 							<h2>Coda di balena</h2>
 							<p>La forza del mare e la sinuosa eleganza della balena, la potenza e la grazia nella magia del colore.</p>
@@ -84,8 +59,7 @@
 						</div>
 					</section>
 
-				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-top onscroll-image-fade-in">
+				<section class="spotlight style1 orient-left content-align-left image-position-top onscroll-image-fade-in">
 						<div class="content">
 							<h2>La lampada del mare</h2>
 							<p>Suono e luce, lasciarsi avvolgere dalle rilassanti frequenze dell'elemento primario di cui è fatta la Terra e di cui è fatto l'essere umano.</p>
@@ -98,8 +72,7 @@
 						</div>
 					</section>
 
-				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>Le origini</h2>
 							<p>Storia del viaggio di una vita nel nome dell'Arte.</p>
@@ -112,8 +85,7 @@
 						</div>
 					</section>
 
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
+				<footer class="wrapper style1 align-center">
 						<div class="inner">
 							<p>&copy; River Room. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 						</div>
@@ -121,8 +93,7 @@
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
