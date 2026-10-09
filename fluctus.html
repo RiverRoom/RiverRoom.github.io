@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			/* Adattamento immagini */
 			.spotlight .image, .banner .image {
 				background-image: none !important;
 				height: auto !important;
@@ -23,20 +24,33 @@
 				max-width: 100% !important;
 				object-fit: contain !important;
 			}
+
+			/* Contenitore Video MP4 */
+			.video-responsive {
+				position: relative;
+				width: 100%;
+				margin: 2rem 0;
+				border-radius: 8px;
+				overflow: hidden;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+			}
+
+			.video-responsive video {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
 
 		<div id="wrapper" class="divided">
 
-			<!-- Banner -->
+			<!-- Banner Principale -->
 			<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 				<div class="content">
 					<h1>Fluctus - La lampada del mare</h1>
-					<p class="major">Suono e luce, lasciarsi avvolgere dalle rilassanti frequenze dell'elemento primario di cui è fatta la Terra e di cui è fatto l'essere umano.
-					Una lampada che imprigiona il suono del mare.
-					La luce incontra il suono delle onde creando quiete e armonia in un piccolo rituale che invita a ritrovare se stessi.
-					Un oggetto di design che non si limita a illuminare uno spazio ma prova ad accendere una sensazione: quella di avere, per un istante, il mare dentro casa.</p>
+					<p class="major">Suono e luce, lasciarsi avvolgere dalle rilassanti frequenze dell'elemento primario di cui è fatta la Terra e di cui è fatto l'essere umano.</p>
 					<ul class="actions stacked">
 						<li><a href="index.html" class="button">← Torna alla Home</a></li>
 					</ul>
@@ -46,18 +60,27 @@
 				</div>
 			</section>
 
-			<!-- Contenuto -->
+			<!-- Contenuto con Video locale MP4 -->
 			<section class="wrapper style1 align-left">
 				<div class="inner">
-					<h2>Il Concept di Fluctus</h2>
-					<p>Racconta qui la genesi della lampada, il gioco di luci e ombre e le sensazioni che vuole trasmettere nell'ambiente in cui viene collocata.</p>
-					
+					<h2>Il Concept e il Movimento</h2>
+					<p>Guarda il video per osservare la rifrazione della luce e i giochi d'ombra creati da Fluctus in azione.</p>
+
+					<!-- VIDEO PLAYER -->
+					<div class="video-responsive">
+						<video controls poster="images/lampade.jpg">
+							<source src="videos/VID-20260711-WA0002.mp4" type="video/mp4">
+							Il tuo browser non supporta la riproduzione video.
+						</video>
+					</div>
+
 					<hr />
-					
-					<h3>Caratteristiche</h3>
+
+					<h3>Caratteristiche Tecniche</h3>
 					<ul>
-						<li><strong>Illuminazione:</strong> LED integrato a luce calda / regolabile</li>
-						<li><strong>Materiali:</strong> Elementi naturali e resine lavorate a mano</li>
+						<li><strong>Illuminazione:</strong> LED integrato ad alta efficienza con tonalità calda.</li>
+						<li><strong>Materiali:</strong> Elementi naturali e resine trasparenti modellate a mano.</li>
+						<li><strong>Effetti:</strong> Proiezione dinamica del movimento dell'acqua sulle pareti.</li>
 					</ul>
 
 					<ul class="actions">
@@ -75,14 +98,7 @@
 
 		</div>
 
-		<!-- Script -->
+		<!-- Script JS -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
